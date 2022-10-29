@@ -43,6 +43,6 @@ steps:
     deployToSlotOrASE: true
     ResourceGroupName: 'exploration'
     SlotName: 'production'
-    packageForLinux: '$(build.artifactStagingDirectory)'
+    package: '$(build.artifactStagingDirectory)/**/*.zip'
     enableCustomDeployment: true
-    DeploymentType: 'webDeploy'
+    DeploymentType: 'zipDeploy'
