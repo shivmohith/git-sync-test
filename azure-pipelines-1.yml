@@ -40,4 +40,4 @@ steps:
     SlotName: 'production'
     package: '$(build.artifactStagingDirectory)/**/*.zip'
     enableCustomDeployment: true
-    DeploymentType: 'zipDeploy'
+    DeploymentType: 'webDeploy'
